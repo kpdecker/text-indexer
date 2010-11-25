@@ -82,6 +82,6 @@ var TextIndexer;
     // Mojo Framework override. Unused on non-Mojo platforms and may be removed if undesired in Mojo apps
     if (window.Mojo && Mojo.Format) {
         // Override the Mojo API if it exists in this context.
-        Mojo.Format.runTextIndexer = runTextIndexer;
+        Mojo.Format.runTextIndexer = TextIndexer.run;
     }
 })();
